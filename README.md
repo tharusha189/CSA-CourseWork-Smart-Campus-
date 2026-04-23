@@ -490,8 +490,3 @@ GitHub: https://github.com/tharusha189/CSA-CourseWork-Smart-Campus-.git
 
 ---
 
-## 📞 Support
-
-For questions or issues:
-- Email: admin@smartcampus.ac.uk
-- GitHub Issues: [Create an issue](https://github.com/YOUR_USERNAME/SmartCampus/issues)
