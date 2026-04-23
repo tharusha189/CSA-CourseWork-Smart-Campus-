@@ -92,6 +92,40 @@ SmartCampus/
 
 ---
 
+
+## Main Endpoints
+
+| Method | Endpoint                        | Purpose                |
+| ------ | ------------------------------- | ---------------------- |
+| GET    | `/api/v1/`                      | Discovery endpoint     |
+| GET    | `/api/v1/rooms`                 | Get all rooms          |
+| POST   | `/api/v1/rooms`                 | Create room            |
+| GET    | `/api/v1/rooms/{id}`            | Get room by ID         |
+| DELETE | `/api/v1/rooms/{id}`            | Delete room            |
+| GET    | `/api/v1/sensors`               | Get all sensors        |
+| GET    | `/api/v1/sensors?type=CO2`      | Filter sensors by type |
+| POST   | `/api/v1/sensors`               | Create sensor          |
+| GET    | `/api/v1/sensors/{id}`          | Get sensor by ID       |
+| GET    | `/api/v1/sensors/{id}/readings` | Get reading history    |
+| POST   | `/api/v1/sensors/{id}/readings` | Add reading            |
+
+---
+
+## Error Handling
+
+Custom exception mappers are implemented.
+
+| Status Code | Meaning                            |
+| ----------- | ---------------------------------- |
+| 404         | Resource not found                 |
+| 409         | Room still contains linked sensors |
+| 422         | Sensor references missing room     |
+| 403         | Sensor under maintenance           |
+| 415         | Unsupported media type             |
+| 500         | Internal server error              |
+
+---
+
 ## 🚀 Build & Deployment
 
 ### Prerequisites
@@ -106,7 +140,7 @@ SmartCampus/
 ### Step 1 – Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SmartCampus.git
+git clone https://github.com/tharusha189/CSA-CourseWork-Smart-Campus-.git
 cd SmartCampus
 ```
 
