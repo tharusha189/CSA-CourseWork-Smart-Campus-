@@ -1,6 +1,9 @@
 # CSA-CourseWork-Smart-Campus-
 Client Server Architecture CoursWork 
 
+Tharusha Perera
+w2120205
+20231639
 
 # Smart Campus – Sensor & Room Management API
 
